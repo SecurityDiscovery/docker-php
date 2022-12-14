@@ -7,7 +7,7 @@
 | `kaulse/php:8.2-cli-v1.5.0`        | cli        | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-cli-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=cli&page=1&ordering=-name)               |
 | `kaulse/php:8.2-fpm-v1.5.0`        | fpm        | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-fpm-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=fpm&page=1&ordering=-name)               |
 | `kaulse/php:8.2-fpm-apache-v1.5.0` | fpm-apache | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-fpm-apache-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=fpm-apache&page=1&ordering=-name) |
-| `kaulse/php:8.2-fpm-nginx-v1.5.0 ` | fpm-apache | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-fpm-nginx-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=fpm-nginx&page=1&ordering=-name)   |
+| `kaulse/php:8.2-fpm-nginx-v1.5.0 ` | fpm-nginx  | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-fpm-nginx-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=fpm-nginx&page=1&ordering=-name)   |
 
 # Available Docker Images
 This is a list of the docker images this repository creates:
