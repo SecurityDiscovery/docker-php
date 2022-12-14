@@ -1,5 +1,14 @@
 ## Fork of SeverSideUp/PHP for PHP8.2 and version v1.5.0
 
+## New PHP-8.2.0 v1.5.0 variations:
+
+| Image Name                     | Variation  | Size                                                                                                                                                                                    |
+|--------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `kaulse/8.2-cli-v1.5.0`        | cli        | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-cli-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=cli&page=1&ordering=-name)               |
+| `kaulse/8.2-fpm-v1.5.0`        | fpm        | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-fpm-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=fpm&page=1&ordering=-name)               |
+| `kaulse/8.2-fpm-apache-v1.5.0` | fpm-apache | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-fpm-apache-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=fpm-apache&page=1&ordering=-name) |
+| `kaulse/8.2-fpm-nginx-v1.5.0 ` | fpm-apache | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-fpm-nginx-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=fpm-nginx&page=1&ordering=-name)   |
+
 # Available Docker Images
 This is a list of the docker images this repository creates:
 
