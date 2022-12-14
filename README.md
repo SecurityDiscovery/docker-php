@@ -24,19 +24,14 @@ Simply use this image name pattern in any of your projects:
 ```sh
 kaulse/php:{{version}}-{{variation-name}}
 ```
-For example... If I wanted to run **PHP 8.0** with **FPM + NGINX**, I would use this image:
+For example... If I wanted to run **PHP 8.2** with **FPM + NGINX**, I would use this image:
 ```sh
-kaulse/php:8.0-fpm-nginx
+kaulse/php:8.2-fpm-nginx-v1.5.0
 ```
 
 
 ### Updates
 ✅ The image builds automatically run weekly (Tuesday at 0800 UTC) for latest security updates.
-
-### How these images are built
-All images are built off of the official Ubuntu 20.04 docker image. We first build our CLI image, then our FPM, etc. Here is what this looks like:
-
-<img src="https://raw.githubusercontent.com/kaulse/docker-php/main/.github/dependency-diagram.png" alt="Dependency Diagram">
 
 ### Project credits & inspiration
 
