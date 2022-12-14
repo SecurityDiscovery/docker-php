@@ -7,7 +7,7 @@
 
 # Default upstream channel to `null` so latest images can be published as `serversideup/php:8.x-cli` and beta as `serversideup/php:beta-8.x-cli`
 ARG  UPSTREAM_CHANNEL=''
-FROM kaulse/php:${UPSTREAM_CHANNEL}8.0-fpm
+FROM kaulse/php:${UPSTREAM_CHANNEL}8.0-fpm-v1.5.0
 
 LABEL maintainer="Jay Rogers (@jaydrogers)"
 
