@@ -21,7 +21,7 @@ jobs:
       # Set our base image and versions here
       matrix:
         ####################################################################################################################
-        # Possibly delete this "base-image" thing. (See https://github.com/serversideup/docker-php/issues/8)
+        # Possibly delete this "base-image" thing. (See https://github.com/kaulse/docker-php/issues/8)
         ####################################################################################################################
         # base-image:
         #   - ubuntu:20.04
@@ -48,10 +48,10 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Build and tag image
-        run: docker build --pull generated-dockerfiles/${{ matrix.php-version }}/${{ matrix.php-variation }}/. --tag serversideup/php:${{ matrix.php-version }}-${{ matrix.php-variation }}-v1.5.0
+        run: docker build --pull generated-dockerfiles/${{ matrix.php-version }}/${{ matrix.php-variation }}/. --tag kaulse/php:${{ matrix.php-version }}-${{ matrix.php-variation }}-v1.5.0
 
       - name: Push version image to DockerHub
-        run: docker push serversideup/php:${{ matrix.php-version }}-${{ matrix.php-variation }}-v1.5.0
+        run: docker push kaulse/php:${{ matrix.php-version }}-${{ matrix.php-variation }}-v1.5.0
   
   update_container_readme:
     runs-on: ubuntu-latest
@@ -68,7 +68,7 @@ jobs:
           DOCKER_USER: ${{ secrets.DOCKER_HUB_README_USERNAME }}
           DOCKER_PASS: ${{ secrets.DOCKER_HUB_README_PASSWORD }}
         with:
-          destination_container_repo: serversideup/php
+          destination_container_repo: kaulse/php
           provider: dockerhub
           short_description: 'PHP images optimized for Laravel, WordPress, and more!'
           readme_file: 'README.md'

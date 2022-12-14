@@ -21,7 +21,7 @@ jobs:
       # Set our base image and versions here
       matrix:
         ####################################################################################################################
-        # Possibly delete this "base-image" thing. (See https://github.com/serversideup/docker-php/issues/8)
+        # Possibly delete this "base-image" thing. (See https://github.com/kaulse/docker-php/issues/8)
         ####################################################################################################################
         # base-image:
         #   - ubuntu:20.04
@@ -48,7 +48,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       ####################################################################
-      # Commenting this out for further testing & structure (See https://github.com/serversideup/docker-php/issues/8)
+      # Commenting this out for further testing & structure (See https://github.com/kaulse/docker-php/issues/8)
       ####################################################################
       # - name: Cache base image digest
       #   uses: actions/cache@v2
@@ -71,11 +71,11 @@ jobs:
 
       # - name: Build image
       #   if: steps.base-image-digest.outputs.sha256 != steps.cached-base-image-digest.outputs.sha256
-      #   run: docker build php/${{ matrix.php-version }}/. --tag serversideup/php:${{ matrix.php-version }}
+      #   run: docker build php/${{ matrix.php-version }}/. --tag kaulse/php:${{ matrix.php-version }}
 
       # - name: Push image to DockerHub
       #   if: steps.base-image-digest.outputs.sha256 != steps.cached-base-image-digest.outputs.sha256
-      #   run: docker push serversideup/php:${{ matrix.php-version }}
+      #   run: docker push kaulse/php:${{ matrix.php-version }}
 
       # - name: Update base image digest cache
       #   run: |
@@ -83,10 +83,10 @@ jobs:
       ####################################################################
 
       - name: Build and tag image
-        run: docker build --build-arg UPSTREAM_CHANNEL="beta-" --pull generated-dockerfiles/${{ matrix.php-version }}/${{ matrix.php-variation }}/. --tag serversideup/php:beta-${{ matrix.php-version }}-${{ matrix.php-variation }}
+        run: docker build --build-arg UPSTREAM_CHANNEL="beta-" --pull generated-dockerfiles/${{ matrix.php-version }}/${{ matrix.php-variation }}/. --tag kaulse/php:beta-${{ matrix.php-version }}-${{ matrix.php-variation }}
 
       - name: Push version image to DockerHub
-        run: docker push serversideup/php:beta-${{ matrix.php-version }}-${{ matrix.php-variation }}
+        run: docker push kaulse/php:beta-${{ matrix.php-version }}-${{ matrix.php-variation }}
 
   ##################################################
   # Commenting this out until further notice
