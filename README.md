@@ -1,4 +1,4 @@
-## Fork of SeverSideUp/PHP for PHP8.2 and version v1.5.0
+## Fork of serversideup/php for PHP8.2 and version v1.5.0
 
 ## New PHP-8.2.0 v1.5.0 variations:
 
