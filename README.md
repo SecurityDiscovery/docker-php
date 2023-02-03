@@ -2,6 +2,7 @@
 
 ## New PHP-8.2.0 v1.5.0 variations:
 
+
 | Image Name                         | Variation  | Size                                                                                                                                                                                    |
 |------------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `kaulse/php:8.2-cli-v1.5.0`        | cli        | [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kaulse/php/8.2-cli-v1.5.0)](https://hub.docker.com/r/kaulse/php/tags?name=cli&page=1&ordering=-name)               |
